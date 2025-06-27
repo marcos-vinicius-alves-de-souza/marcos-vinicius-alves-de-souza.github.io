@@ -1,0 +1,81 @@
+body {
+  font-family: 'Inter', sans-serif;
+}
+
+ul {
+  list-style-type: none; /* Remover o ponto do unordened list */
+  margin: 0; /* Removendo distância da margem da tela */
+  padding: 0; /* Removendo distância interna entre os elementos */
+  overflow: hidden; /* Ignorar caso ultrapasse o tamanho da tela, evitando aparecer a barra horizontal ou vertical */
+  background-color: #09122C;
+  display: flex; /* Usar Flexbox para alinhar os itens */
+  justify-content: center; /* Centralizar os itens horizontalmente */
+}
+
+li a { /* Centralizar, deixar o texto na cor branca e aplicar um padding a todo anchor tag dentro de qualquer item da lista */
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  margin: 10px 10px;
+}
+
+li a:hover { /* Quando o mouse passar por cima de um anchor, mudar o background-color */
+  background-color: #141d41;
+}
+
+div {
+  margin: 10px auto;
+  width: 80%;
+}
+
+p {
+  font-size: x-large;
+}
+
+.projetos-portifolio {
+  width: 100%;
+  display: flex;
+  gap: 20px; /* Espaçamento entre as sections */
+}
+
+.projetos-portifolio section {
+  flex: 1; /* Faz as sections ocuparem o mesmo espaço */
+}
+
+form { /* Definindo um estilo para o formulário de contato */
+  font-size: x-large;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: fit-content;
+  margin: 0 auto;
+}
+
+form input { /* Colocando borda arredondada e uma altura e largura maiores */
+  width: 25rem;
+  height: 1.5rem;
+  border-radius: 4px;
+  font-size: large;
+}
+
+form textarea { /* Colocando borda arredondada e uma altura e largura maiores */
+  width: 25rem;
+  height: 5rem;
+  border-radius: 5px;
+  font-size: large;
+}
+
+form button { /* Colocando borda arredondada e uma altura e largura maiores */
+  border-radius: 5px;
+  width: 15rem;
+  height: 2rem;
+  background-color: white;
+  font-size: large;
+  
+}
+
+form button:hover { /* Quando passar o mouse por cima, aparecer o cursor indicando que é clicável */
+  cursor:pointer;
+}
